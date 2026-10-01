@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-01T08:08:03.750277+00:00",
+  "cohort_groups": [
+    {
+      "cohort_id": "S01",
+      "series": [
+        "GSE127530"
+      ],
+      "reported_people": {
+        "GSE127530": 5
+      },
+      "sources": [
+        {
+          "accession": "GSE127530",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "completed",
+          "fresh_analysis": {
+            "analysis_directory": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse127530-final-v1",
+            "run_manifest": {
+              "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse127530-final-v1/run_manifest.json",
+              "sha256": "65bc374c42a6103a711be79144fa178234265a41a3ca00c41ad45e6d1149665c",
+              "bytes": 4870,
+              "source_url": null
+            },
+            "analysis_version": "gse127530-limma-voom-final-v1",
+            "people": 5
+          },
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE127530/GSE127530_family.soft.gz",
+            "sha256": "14de8ab4f0e38b1480f2a1b085811395a6043e5f3dc679199138d0c01d44e748",
+            "bytes": 9863,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 45,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA524902",
+            "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP187105"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 45,
+          "resolved_subject_candidates": 5,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        }
+      ]
+    },
+    {
+      "cohort_id": "S02",
+      "series": [
+        "GSE56960"
+      ],
+      "reported_people": {
+        "GSE56960": 14
+      },
+      "sources": [
+        {
+          "accession": "GSE56960",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "completed",
+          "fresh_analysis": {
+            "analysis_directory": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse56960-final-v1",
+            "run_manifest": {
+              "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse56960-final-v1/run_manifest.json",
+              "sha256": "1549a261f9856dccf8dbc06399c9b74dfaeaba528e1b74789208367930ada46a",
+              "bytes": 5105,
+              "source_url": null
+            },
+            "analysis_version": "gse56960-final-dose-response-v1",
+            "people": 14
+          },
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE56960/GSE56960_family.soft.gz",
+            "sha256": "0f13ffa56535430f0b8c748eb0d108274790c9b22a1692084367926bb6977ca4",
+            "bytes": 94894629,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 168,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA245076"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 168,
+          "resolved_subject_candidates": 14,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        }
+      ]
+    },
+    {
+      "cohort_id": "S03",
+      "series": [
+        "GSE54325",
+        "GSE54643"
+      ],
+      "containers": [
+        "GSE54690"
+      ],
+      "reported_people": {
+        "GSE54325": 7,
+        "GSE54643": 10
+      },
+      "person_level_cross_assay_mapping": "unconfirmed; 7 expression people and 10 methylation people cannot be summed or automatically fused",
+      "sources": [
+        {
+          "accession": "GSE54325",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE54325/GSE54325_family.soft.gz",
+            "sha256": "691ea0664032955dedcc6dd1743acfa9093dc1892ac988669b33436c2f58ef31",
+            "bytes": 9076271,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 7,
+          "series_relationships": [
+            "SubSeries of: GSE54690",
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA236183"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 7,
+          "resolved_subject_candidates": 7,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "two_color_arrays": 7,
+          "paired_biological_samples_if_channels_verified": 14,
+          "reported_vs_resolved_agreement": true
+        },
+        {
+          "accession": "GSE54643",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE54643/GSE54643_family.soft.gz",
+            "sha256": "de4814babc9c09872b204afdeff12a5beaeb7ffc05eae0c4b6eec211dee55bff",
+            "bytes": 159204371,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 20,
+          "series_relationships": [
+            "SubSeries of: GSE54690",
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA237381"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 20,
+          "resolved_subject_candidates": 0,
+          "unresolved_sample_subjects": 20,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": false
+        },
+        {
+          "accession": "GSE54690",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": false,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE54690/GSE54690_family.soft.gz",
+            "sha256": "c1d934ed7650694e0bd54cca0b732d1a610eba2a1efafd02d799d5a597596a4f",
+            "bytes": 168278178,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 27,
+          "series_relationships": [
+            "SuperSeries of: GSE54325",
+            "SuperSeries of: GSE54643",
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA237380"
+          ],
+          "is_superseries_container": true,
+          "sample_records": 27,
+          "resolved_subject_candidates": null,
+          "unresolved_sample_subjects": 27,
+          "subject_count_basis": "SuperSeries container; child records are not new participants"
+        }
+      ]
+    },
+    {
+      "cohort_id": "S04",
+      "series": [
+        "GSE107205"
+      ],
+      "reported_people": {
+        "GSE107205": 36
+      },
+      "sources": [
+        {
+          "accession": "GSE107205",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE107205/GSE107205_family.soft.gz",
+            "sha256": "f993c1782950639e6d6a124fbfd713beb56a0113b044908d5f7ad58d6ccc71d6",
+            "bytes": 383091843,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 72,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA419474"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 72,
+          "resolved_subject_candidates": 0,
+          "unresolved_sample_subjects": 72,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": false
+        }
+      ]
+    },
+    {
+      "cohort_id": "S05",
+      "series": [
+        "GSE219217"
+      ],
+      "reported_people": {
+        "GSE219217": 18
+      },
+      "sources": [
+        {
+          "accession": "GSE219217",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE219217/GSE219217_family.soft.gz",
+            "sha256": "328004c4b55d6565b20c8fd1dd3c1ff19d79d2b47f5fd587285794574a1658d3",
+            "bytes": 359023214,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 54,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA907742"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 54,
+          "resolved_subject_candidates": 18,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        }
+      ]
+    },
+    {
+      "cohort_id": "S06",
+      "series": [
+        "GSE13466"
+      ],
+      "reported_people": {
+        "GSE13466": 21
+      },
+      "sources": [
+        {
+          "accession": "GSE13466",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/expansion/2026-10-01/raw/GSE13466/GSE13466_family.soft.gz",
+            "sha256": "a5771024acf27c48ebc67f59474a8934e5d82f518c854d9037f8d604a8391821",
+            "bytes": 15434050,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 84,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA109993"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 84,
+          "resolved_subject_candidates": 21,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        }
+      ]
+    },
+    {
+      "cohort_id": "S07",
+      "series": [
+        "GSE27385"
+      ],
+      "containers": [
+        "GSE27387"
+      ],
+      "other_children": [
+        "GSE27384",
+        "GSE27386"
+      ],
+      "reported_people": {
+        "GSE27385": 11
+      },
+      "sources": [
+        {
+          "accession": "GSE27385",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "completed",
+          "fresh_analysis": {
+            "analysis_directory": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse27385-final-v2",
+            "run_manifest": {
+              "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse27385-final-v2/run_manifest.json",
+              "sha256": "bc9a8dfacb8214782becd8f36fcb8cdd6bb7e5e3752f30738df1c36acd2fd1d0",
+              "bytes": 5334,
+              "source_url": null
+            },
+            "analysis_version": "gse27385-rma-limma-paired-period-v2",
+            "people": 11
+          },
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/expansion/2026-10-01/raw/GSE27385/GSE27385_family.soft.gz",
+            "sha256": "0059a6e810a7868117ffa55f82f2b2923e7d6189d91f4e3295106a8ccc19f3f1",
+            "bytes": 27142341,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 33,
+          "series_relationships": [
+            "SubSeries of: GSE27387",
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA141847"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 33,
+          "resolved_subject_candidates": 11,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        },
+        {
+          "accession": "GSE27387",
+          "source_metadata_status": "not_located",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": false,
+          "count_as_additional_independent_cohort": false
+        },
+        {
+          "accession": "GSE27384",
+          "source_metadata_status": "not_located",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": false,
+          "count_as_additional_independent_cohort": false
+        },
+        {
+          "accession": "GSE27386",
+          "source_metadata_status": "not_located",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": false,
+          "count_as_additional_independent_cohort": false
+        }
+      ]
+    },
+    {
+      "cohort_id": "S08",
+      "series": [
+        "GSE98645"
+      ],
+      "reported_people": {
+        "GSE98645": 7
+      },
+      "subset_scope": "7 RNA-seq people; acute/chronic visits are one participant cohort, not independent cohorts",
+      "sources": [
+        {
+          "accession": "GSE98645",
+          "source_metadata_status": "full_sample_metadata_read",
+          "fresh_analysis_status": "not_reanalyzed_in_final_atlas",
+          "contributes_assay_subset_to_cohort_group": true,
+          "count_as_additional_independent_cohort": false,
+          "source": {
+            "path": "/home/keunsoo/projects/nutrigenomics-db/expansion/2026-10-01/raw/GSE98645/GSE98645_family.soft.gz",
+            "sha256": "8b26d731d9e2eea119f5518a4d3ce489a48077a11520dce4abec048841a4770c",
+            "bytes": 7302,
+            "source_url": null
+          },
+          "reported_GEO_sample_accessions": 77,
+          "series_relationships": [
+            "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA385815",
+            "SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRP106630"
+          ],
+          "is_superseries_container": false,
+          "sample_records": 77,
+          "resolved_subject_candidates": 7,
+          "unresolved_sample_subjects": 0,
+          "subject_count_basis": "study-specific source titles or explicit subject characteristics; no patient prediction",
+          "reported_vs_resolved_agreement": true
+        }
+      ]
+    }
+  ],
+  "cohort_group_count": 8,
+  "patient_multiomics_fusion_confirmed": false,
+  "unique_people_total": "not summed; platform subsets and containers are not independent cohorts"
+}

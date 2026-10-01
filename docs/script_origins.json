@@ -1,0 +1,30 @@
+{
+  "copied_code_only": true,
+  "old_statistical_outputs_adopted": false,
+  "files": [
+    {
+      "name": "analyze_gse127530.R",
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\scripts\\analyze_gse127530.R",
+      "original_sha256": "4292759ccb3b5676d821455283d305fb799a31b29a2229df17d0ad5224b86cf3",
+      "adapted_sha256": "287f9df2aab6135a8adb5f2ce1c8f515fc5933748be7ea5e3cfa94594b6aea61"
+    },
+    {
+      "name": "analyze_gse56960.R",
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\scripts\\analyze_gse56960.R",
+      "original_sha256": "56c5d6c969bf91cc2b36fc4516afa0fc383446f5e141ef364d849ff4a56ff96d",
+      "adapted_sha256": "a949feabd4de3c33c0ac07a87f0d8d23947bd2646a14ce6eaf8974e854e25420"
+    },
+    {
+      "name": "analyze_gse27385.R",
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\scripts\\analyze_gse27385.R",
+      "original_sha256": "93a3f7ab0c0792169514715adea9994bd6673c71138c0746544f4b8166e237c0",
+      "adapted_sha256": "93a3f7ab0c0792169514715adea9994bd6673c71138c0746544f4b8166e237c0"
+    },
+    {
+      "name": "bridge_omics_helpers.R",
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\scripts\\bridge_omics_helpers.R",
+      "original_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+      "adapted_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d"
+    }
+  ]
+}
