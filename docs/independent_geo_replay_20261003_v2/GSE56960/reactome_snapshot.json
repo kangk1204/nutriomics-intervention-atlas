@@ -1,0 +1,6 @@
+{
+  "package": "reactome.db",
+  "package_version": "1.95.0",
+  "gene_set_sha256": "e4c76df0c20c0ee5141407f03ee3a051f4da65e6bb331d52bbe6aef6ab3389b0",
+  "release_status": "Frozen legacy package snapshot; not relabeled as a current Reactome release"
+}

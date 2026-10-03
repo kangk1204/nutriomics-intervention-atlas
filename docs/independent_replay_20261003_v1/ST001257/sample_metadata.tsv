@@ -1,0 +1,91 @@
+sample_id	repository_sample_id	sample_type	subject_id	arm	timepoint	source_factors	name_factor_arm_discordance	arm_mapping_basis
+01 Grapefruit	SA091318	Food				Sample type:Food | Food type:Grapefruit | Pre or Post and food:na		
+02 Apple Juice	SA091308	Food				Sample type:Food | Food type:Apple Juice | Pre or Post and food:na		
+03 Blueberries	SA091311	Food				Sample type:Food | Food type:Blueberries | Pre or Post and food:na		
+04 Broccoli	SA091312	Food				Sample type:Food | Food type:Broccoli | Pre or Post and food:na		
+05 Apple	SA091309	Food				Sample type:Food | Food type:Apple | Pre or Post and food:na		
+06 Pork Loin	SA091320	Food				Sample type:Food | Food type:Pork Loin | Pre or Post and food:na		
+07 Cucumber	SA091317	Food				Sample type:Food | Food type:Cucumber | Pre or Post and food:na		
+08 Peanut Butter 8 ul	SA091319	Food				Sample type:Food | Food type:Peanut Butter | Pre or Post and food:na		
+09 Chicken Tenderloin	SA091313	Food				Sample type:Food | Food type:Chicken | Pre or Post and food:na		
+10 Tilapia	SA091321	Food				Sample type:Food | Food type:Tilapia | Pre or Post and food:na		
+11 coffee	SA091316	Food				Sample type:Food | Food type:Coffee | Pre or Post and food:na		
+12 Beef Tenderloin	SA091310	Food				Sample type:Food | Food type:Beef | Pre or Post and food:na		
+13 Coffee diluted	SA091314	Food				Sample type:Food | Food type:Coffee diluted | Pre or Post and food:na		
+14 Coffee Neat	SA091315	Food				Sample type:Food | Food type:Coffee neat | Pre or Post and food:na		
+S31-101 Post-Ch	SA091339	Urine	S31-101	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-101 Post-Po	SA091346	Urine	S31-101	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-101 Pre-Ch	SA091370	Urine	S31-101	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-101 Pre-Po	SA091388	Urine	S31-101	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-102 Post-Ch	SA091340	Urine	S31-102	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-102 Post-Po	SA091343	Urine	S31-102	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-102 Pre-Ch	SA091369	Urine	S31-102	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-102 Pre-Po	SA091389	Urine	S31-102	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-105 Post-Ch	SA091336	Urine	S31-105	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-105 Post-Po	SA091354	Urine	S31-105	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-105 Pre-Ch	SA091368	Urine	S31-105	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-105 Pre-Po	SA091387	Urine	S31-105	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-106 Post-Ch	SA091333	Urine	S31-106	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-106 Post-Po	SA091357	Urine	S31-106	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-106 Pre-Ch	SA091367	Urine	S31-106	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-106 Pre-Po	SA091386	Urine	S31-106	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-107 Post-Ch	SA091324	Urine	S31-107	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-107 Post-Po	SA091352	Urine	S31-107	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-107 Pre-Ch	SA091371	Urine	S31-107	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-107 Pre-Po	SA091384	Urine	S31-107	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-108 Post Po	SA091350	Urine	S31-108	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-108 Post-Ch	SA091326	Urine	S31-108	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-108 Pre-Ch	SA091365	Urine	S31-108	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-108 Pre-Po	SA091385	Urine	S31-108	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-109 Post-Ch	SA091325	Urine	S31-109	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-109 Post-Po	SA091349	Urine	S31-109	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-109 Pre-Ch	SA091378	Urine	S31-109	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-109 Pre-Po	SA091390	Urine	S31-109	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-111 Post-Ch	SA091332	Urine	S31-111	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-111 Post-Po	SA091341	Urine	S31-111	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-111 Pre-Ch	SA091375	Urine	S31-111	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-111 Pre-Po	SA091383	Urine	S31-111	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-114 Post-Ch	SA091327	Urine	S31-114	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-114 Post-Po	SA091342	Urine	S31-114	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-114 Pre-Ch	SA091373	Urine	S31-114	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-114 Pre-Po	SA091391	Urine	S31-114	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-115 Post-Ch	SA091330	Urine	S31-115	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-115 Post-Po	SA091345	Urine	S31-115	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-115 Pre-Ch	SA091374	Urine	S31-115	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-115 Pre-Po	SA091396	Urine	S31-115	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-116 Post-Ch	SA091329	Urine	S31-116	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-116 Post-Po	SA091348	Urine	S31-116	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-116 Pre-Ch	SA091377	Urine	S31-116	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-116 Pre-Po	SA091395	Urine	S31-116	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-119 Post Po	SA091328	Urine	S31-119	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	True	official factor; name supplies participant only
+S31-119 Post-Ch	SA091356	Urine	S31-119	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	True	official factor; name supplies participant only
+S31-119 Pre-Ch	SA091364	Urine	S31-119	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-119 Pre-Po	SA091394	Urine	S31-119	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-120 Post-Ch	SA091331	Urine	S31-120	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-120 Post-Po	SA091359	Urine	S31-120	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-120 Pre-Ch	SA091362	Urine	S31-120	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-120 Pre-Po	SA091392	Urine	S31-120	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-141 Post-Ch	SA091322	Urine	S31-141	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-141 Post-Po	SA091351	Urine	S31-141	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-141 Pre-Ch	SA091360	Urine	S31-141	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-141 Pre-Po	SA091393	Urine	S31-141	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-142 Post-Ch	SA091335	Urine	S31-142	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-142 Post-Po	SA091347	Urine	S31-142	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-142 Pre-Ch	SA091361	Urine	S31-142	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-142 Pre-Po	SA091397	Urine	S31-142	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-144 Post Ch	SA091334	Urine	S31-144	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-144 Post-Po	SA091358	Urine	S31-144	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-144 Pre-Ch	SA091372	Urine	S31-144	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-144 Pre-Po	SA091379	Urine	S31-144	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-145 Post-Ch	SA091337	Urine	S31-145	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-145 Post-Po	SA091355	Urine	S31-145	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-145 Pre-Ch	SA091363	Urine	S31-145	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-145 Pre-Po	SA091382	Urine	S31-145	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-146 Post-Ch	SA091338	Urine	S31-146	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-146 Post-Po	SA091344	Urine	S31-146	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-146 Pre Ch	SA091376	Urine	S31-146	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-146 Pre-Po	SA091380	Urine	S31-146	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only
+S31-148 Post-Ch	SA091323	Urine	S31-148	chicken	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Chicken	False	official factor; name supplies participant only
+S31-148 Post-Po	SA091353	Urine	S31-148	pork	post	Sample type:Urine | Food type:urine | Pre or Post and food:Post Pork	False	official factor; name supplies participant only
+S31-148 Pre-Ch	SA091366	Urine	S31-148	chicken	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Chicken	False	official factor; name supplies participant only
+S31-148 Pre-Po	SA091381	Urine	S31-148	pork	pre	Sample type:Urine | Food type:urine | Pre or Post and food:Pre Pork	False	official factor; name supplies participant only

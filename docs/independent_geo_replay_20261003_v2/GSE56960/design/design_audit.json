@@ -1,0 +1,13 @@
+{
+  "accession": "GSE56960",
+  "samples": 168,
+  "independent_people": 14,
+  "source": {
+    "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/GSE56960/GSE56960_family.soft.gz",
+    "sha256": "0f13ffa56535430f0b8c748eb0d108274790c9b22a1692084367926bb6977ca4",
+    "bytes": 94894629,
+    "source_url": null
+  },
+  "metadata_rederived_from_original_soft": true,
+  "old_analysis_results_reused": false
+}

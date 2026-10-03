@@ -1,0 +1,130 @@
+{
+  "accession": "GSE127530",
+  "validation": {
+    "accession": "GSE127530",
+    "independent_people": 5,
+    "tables": {
+      "gene_effects.tsv.gz": {
+        "rows": 41982,
+        "features": 13994,
+        "contrasts": 3,
+        "estimable_tests": 41982,
+        "q_below_005": 1709,
+        "sha256": "a8f2e6760dc812eb9019080fb5392f90dd870be568cb3bf46aed8ec85d95b78c"
+      },
+      "pathway_effects.tsv.gz": {
+        "rows": 4407,
+        "features": 1469,
+        "contrasts": 3,
+        "estimable_tests": 4407,
+        "q_below_005": 612,
+        "sha256": "238f7947e79748b5dcb13bb4f951e44a4b0ee1514e088cf354a72966f924d594"
+      }
+    },
+    "errors": [],
+    "patient_multiomics_fusion_confirmed": false
+  },
+  "comparisons": {
+    "gene_effects.tsv.gz": {
+      "rows": 41982,
+      "features": 13994,
+      "contrasts": 3,
+      "all_numeric_fields_reproduced": true,
+      "fields": {
+        "effect_estimate": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "standard_error": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "confidence_low": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "confidence_high": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "p_value": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "q_value": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "n_people": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        }
+      },
+      "original_table": {
+        "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse127530-final-v1/gene_effects.tsv.gz",
+        "sha256": "a8f2e6760dc812eb9019080fb5392f90dd870be568cb3bf46aed8ec85d95b78c",
+        "bytes": 3120731,
+        "source_url": null
+      },
+      "new_table": {
+        "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/gene_effects.tsv.gz",
+        "sha256": "a8f2e6760dc812eb9019080fb5392f90dd870be568cb3bf46aed8ec85d95b78c",
+        "bytes": 3120731,
+        "source_url": null
+      }
+    },
+    "pathway_effects.tsv.gz": {
+      "rows": 4407,
+      "features": 1469,
+      "contrasts": 3,
+      "all_numeric_fields_reproduced": true,
+      "fields": {
+        "effect_estimate": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "standard_error": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "p_value": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "q_value": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "n_people": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        }
+      },
+      "original_table": {
+        "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/gse127530-final-v1/pathway_effects.tsv.gz",
+        "sha256": "238f7947e79748b5dcb13bb4f951e44a4b0ee1514e088cf354a72966f924d594",
+        "bytes": 436482,
+        "source_url": null
+      },
+      "new_table": {
+        "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/pathway_effects.tsv.gz",
+        "sha256": "238f7947e79748b5dcb13bb4f951e44a4b0ee1514e088cf354a72966f924d594",
+        "bytes": 436482,
+        "source_url": null
+      }
+    }
+  },
+  "raw_IDAT_or_instrument_metabolomics_reprocessing": false
+}

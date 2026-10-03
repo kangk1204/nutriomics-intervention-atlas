@@ -1,0 +1,49 @@
+{
+  "accession": "GSE127530",
+  "analysis_version": "gse127530-limma-voom-final-v1",
+  "run_utc": "2026-10-03 05:40:16 UTC",
+  "input_file": "GSE127530_fixed_combinedCounts.txt.gz",
+  "input_file_sha256": "2f9ce53357f48601907528dee537c5aedaf8aaec3a70c64f48bc54b33b834bce",
+  "input_compressed_bytes": 1254795,
+  "input_gene_rows": 25342,
+  "duplicate_gene_symbol_rows_aggregated": 0,
+  "filtered_gene_rows": 13994,
+  "sample_count": 45,
+  "independent_people": 5,
+  "samples_per_person": {
+    "S17": 9,
+    "S2": 9,
+    "S21": 9,
+    "S27": 9,
+    "S9": 9
+  },
+  "timepoints": ["fast", "3hr", "6hr"],
+  "study_days": ["1", "2", "3"],
+  "block_variable": "subject_id",
+  "duplicate_correlation": 0.4711,
+  "normalization": "edgeR TMM; limma-voom with duplicateCorrelation blocking on person",
+  "design_formula": "~ study_day + timepoint; person-level repeated-measures correlation blocked by subject_id",
+  "contrasts": ["three_hr_vs_fast", "six_hr_vs_fast", "six_hr_vs_three_hr"],
+  "multiple_testing": "Primary BH across all genes times three planned contrasts; pathways form a separate family; within-contrast q retained",
+  "reactome_snapshot": {
+    "package": "reactome.db",
+    "package_version": "1.95.0",
+    "file_sha256": "c62a39dbab34392d3b08a7a985d56520295cc4eef7dd233576d2c399b2b80e49",
+    "database_metadata": {
+      "name": ["DBSCHEMA", "DBSCHEMAVERSION", "SOURCENAME", "SOURCEURL", "SOURCEDATE", "Supporting package", "Db type"],
+      "value": ["REACTOME_DB", "95", "Reactome", "https://reactome.org/download/current/databases/gk_current.sql.gz", "20459", "AnnotationDbi", "ReactomeDb"]
+    },
+    "release_status": "Legacy package snapshot frozen as exact gene-set file; not relabeled as current Reactome release"
+  },
+  "pathway_analysis": "fgsea ranked by limma moderated t statistic; Reactome annotation versions recorded through package lock",
+  "package_versions": {
+    "R": "4.5.3",
+    "edgeR": "4.8.2",
+    "limma": "3.66.0",
+    "fgsea": "1.36.2",
+    "AnnotationDbi": "1.72.0",
+    "org.Hs.eg.db": "3.22.0",
+    "reactome.db": "1.95.0"
+  },
+  "interpretation_limit": "Five independent people, with repeated samples across three study days and three timepoints. The contrast estimates a whole-blood response to a mixed high-fat challenge and cannot identify the causal effect of a single food component. No individual response or health-risk prediction is produced."
+}

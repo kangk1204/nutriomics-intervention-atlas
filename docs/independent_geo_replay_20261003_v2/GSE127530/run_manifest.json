@@ -1,0 +1,113 @@
+{
+  "accession": "GSE127530",
+  "started_at": "2026-10-03T05:39:07.088605+00:00",
+  "status": "completed",
+  "R_environment": {
+    "R": "4.5.3",
+    "libraries": [
+      "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-library",
+      "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-nutrigenomics/lib/R/library"
+    ],
+    "packages": {
+      "edgeR": "4.8.2",
+      "limma": "3.66.0",
+      "AnnotationDbi": "1.72.0",
+      "fgsea": "1.36.2",
+      "org.Hs.eg.db": "3.22.0",
+      "reactome.db": "1.95.0",
+      "jsonlite": "2.0.0"
+    }
+  },
+  "rscript": "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-nutrigenomics/bin/Rscript",
+  "script": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/analyze_gse127530.R",
+    "sha256": "287f9df2aab6135a8adb5f2ce1c8f515fc5933748be7ea5e3cfa94594b6aea61",
+    "bytes": 14824,
+    "source_url": null
+  },
+  "helper": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/bridge_omics_helpers.R",
+    "sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+    "bytes": 10873,
+    "source_url": null
+  },
+  "old_analysis_results_reused": false,
+  "command": [
+    "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-nutrigenomics/bin/Rscript",
+    "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/analyze_gse127530.R",
+    "--data-dir",
+    "/home/keunsoo/projects/nutrigenomics-db/data",
+    "--output-dir",
+    "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530"
+  ],
+  "returncode": 0,
+  "finished_at": "2026-10-03T05:40:18.274031+00:00",
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/analysis.log",
+      "sha256": "66b1689d42fd21d5bff8bd3ebc6ab7030cc2b5dd978435d5032d47f8f0935ba1",
+      "bytes": 374,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/analysis_metadata.json",
+      "sha256": "af90506f3aa0a10d1dafe80bb994e639ea618ee990f013e4fa50cb09b8a6ce2f",
+      "bytes": 2401,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/feature_crosswalk.tsv",
+      "sha256": "e27d71b8db1909f8f3b10dca1aa9ee93412d7b93e40ae56e7f4c13085661084f",
+      "bytes": 243872,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/gene_effects.tsv.gz",
+      "sha256": "a8f2e6760dc812eb9019080fb5392f90dd870be568cb3bf46aed8ec85d95b78c",
+      "bytes": 3120731,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/gse127530_counts_audit.json",
+      "sha256": "57e029bf17cd5615798428675c646cf3ff6291d5f63ab2abdbd3440d1e18cc3d",
+      "bytes": 16249,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/pathway_effects.tsv.gz",
+      "sha256": "238f7947e79748b5dcb13bb4f951e44a4b0ee1514e088cf354a72966f924d594",
+      "bytes": 436482,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/reactome_membership.tsv",
+      "sha256": "c62a39dbab34392d3b08a7a985d56520295cc4eef7dd233576d2c399b2b80e49",
+      "bytes": 2590589,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/reactome_snapshot.json",
+      "sha256": "3e6c9efb1dd61686f8d9eeb29976a8d1d78e7bc1a60777b1b618482d813e2a73",
+      "bytes": 572,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/sample_metadata.tsv",
+      "sha256": "0fe75095024fed24261bc778e4fe070bf5c9d973ae3b2e5b048e0555a286a3a7",
+      "bytes": 1813,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/sample_qc.tsv",
+      "sha256": "97980d30d413735c857df7244a4617147ff0c86be60ae1f59b6787f0dfdb1f1e",
+      "bytes": 2718,
+      "source_url": null
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE127530/voom_mean_variance.pdf",
+      "sha256": "c3885d07b39203fab186d1e4d16803f8bb2e466ed599843fb45b3bfc703bbf7a",
+      "bytes": 821831,
+      "source_url": null
+    }
+  ]
+}

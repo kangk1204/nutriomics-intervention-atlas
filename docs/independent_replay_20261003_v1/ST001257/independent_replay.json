@@ -1,0 +1,77 @@
+{
+  "accession": "ST001257",
+  "validation": {
+    "accession": "ST001257",
+    "independent_people": 19,
+    "tables": {
+      "metabolite_effects.tsv.gz": {
+        "rows": 23386,
+        "features": 11693,
+        "contrasts": 2,
+        "estimable_tests": 722,
+        "q_below_005": 0,
+        "sha256": "2ebf1aa44e195a7dbc50416ba3811c4f9a6f2c8877d5e7df7615d75f7f080822"
+      }
+    },
+    "errors": [],
+    "patient_multiomics_fusion_confirmed": false
+  },
+  "comparisons": {
+    "metabolite_effects.tsv.gz": {
+      "rows": 23386,
+      "features": 11693,
+      "contrasts": 2,
+      "all_numeric_fields_reproduced": true,
+      "fields": {
+        "effect_estimate": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "standard_error": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "confidence_low": {
+          "max_absolute_difference": 8.881784197001252e-16,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "confidence_high": {
+          "max_absolute_difference": 8.881784197001252e-16,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "p_value": {
+          "max_absolute_difference": 2.220446049250313e-16,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "q_value": {
+          "max_absolute_difference": 4.440892098500626e-16,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        },
+        "n_people": {
+          "max_absolute_difference": 0.0,
+          "missingness_identical": true,
+          "within_absolute_1e_10_relative_1e_8": true
+        }
+      },
+      "original_table": {
+        "path": "/home/keunsoo4070/projects/nutriomics-phase1-20261003/intervention/artifacts/st001257-paired-v1/metabolite_effects.tsv.gz",
+        "sha256": "f1042c38b327c5999b7665c8cb2532609e0689dfeb0e22cb3c1dfd642d328e07",
+        "bytes": 453853,
+        "source_url": null
+      },
+      "new_table": {
+        "path": "/home/keunsoo4070/projects/nutriomics-phase1-20261003/intervention/artifacts/independent_replay_20261003_v1/ST001257/metabolite_effects.tsv.gz",
+        "sha256": "2ebf1aa44e195a7dbc50416ba3811c4f9a6f2c8877d5e7df7615d75f7f080822",
+        "bytes": 453695,
+        "source_url": null
+      }
+    }
+  },
+  "raw_IDAT_or_instrument_metabolomics_reprocessing": false
+}

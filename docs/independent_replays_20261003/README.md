@@ -1,0 +1,7 @@
+All four prespecified intervention analyses were independently rerun into fresh directories. `summary.json` contains hashed replay receipts and `summary.tsv` distinguishes people from assays, features from contrasts, and gene/metabolite from pathway testing families. All numeric fields reproduced the prior outputs (maximum floating-point difference below 1e-15).
+
+GSE127530 uses original count data with TMM/voom and participant blocking, not a new FASTQ alignment. GSE56960 and GSE27385 independently reprocessed original CEL files by RMA with the frozen R/Bioconductor package libraries. ST001257 starts from officially processed log2 urine abundances, not instrument-raw data, and does not apply a second log transform. Participant counts are 5, 14, 11 and 19 respectively; assays are 45, 168, 33 and 76. These studies are not the same participants and do not establish individual multimodal omics pairing.
+
+Pathway q-values are a separate testing family and cannot be described as the number of causal genes. ST001257 lacks verified intervention period/sequence and measured blood-pressure outcomes; its features are mass/retention-time measurements rather than confirmed metabolite identities.
+
+The initial GEO wrapper encountered an optional-field comparison issue and a missing CDF in the first R library. The finished v2/v3 reruns preserve those earlier directories and use the exact frozen package libraries, without modifying the original results.

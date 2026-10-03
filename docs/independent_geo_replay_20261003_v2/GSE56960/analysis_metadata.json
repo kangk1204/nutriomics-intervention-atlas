@@ -1,0 +1,937 @@
+{
+  "accession": "GSE56960",
+  "analysis_version": "gse56960-final-dose-response-v1",
+  "run_utc": "2026-10-03 05:47:27 UTC",
+  "script_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/analyze_gse56960.R",
+  "script_sha256": "a949feabd4de3c33c0ac07a87f0d8d23947bd2646a14ce6eaf8974e854e25420",
+  "environment_lock_path": "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-environment-linux-64.lock.txt",
+  "environment_lock_sha256": "5eafa831151e281741bfa37c43a4a99896272c0c8f34f930b875f1da6d13845f",
+  "overlay_lock_path": "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-overlay-lock.txt",
+  "overlay_lock_sha256": "9eb8078427fe7eb54398d79a0533445aaebeaf244450a857f0ab7de0e802da4a",
+  "input_manifest": [
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372162_12_A_T0.cel.gz",
+      "bytes": 2031407,
+      "sha256": "3d14af444d7806a18c1c661b752c1c9a67a8c40cf1f51deffc0a13c7bf78257f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372163_12_A_T2.cel.gz",
+      "bytes": 2005811,
+      "sha256": "299b6b7fc3f39e8da89f7ab212e5c088801002cd4eb4216934ae4a0dd2430f9b"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372164_12_A_T4.cel.gz",
+      "bytes": 1967978,
+      "sha256": "7bb096ffb556970b4963c360d8f018974774459253da7e520d8a5c4a891cf4a4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372165_12_A_T6.cel.gz",
+      "bytes": 1955437,
+      "sha256": "9803af13bdbe631f790fbd2abe91178272039fdffea12a261766762ee5d26788"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372166_12_B_T0.cel.gz",
+      "bytes": 2048673,
+      "sha256": "f190044a059eddda8f7d04f28f8d8e017454506d5ecd786ee04adbe34f4607bc"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372167_12_B_T2.cel.gz",
+      "bytes": 2062973,
+      "sha256": "6833b0b034294b24a2e7c6fdbab57edb6fe68e92ad6426554a597d6722a959c0"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372168_12_B_T4.cel.gz",
+      "bytes": 2063116,
+      "sha256": "289edf4c8b55c5605a8f2095eb978b3984d369613ac8d9bbeb5335009633a7e1"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372169_12_B_T6.cel.gz",
+      "bytes": 2067135,
+      "sha256": "f7b475236a18a03042004a76ee68c796ee274ab7463f028692d5184c1aebbaef"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372170_12_C_T0.cel.gz",
+      "bytes": 2091062,
+      "sha256": "ce7d3e0a926f0961281f51a9269bfef827a7c43840aa47f030494a09694cfc3e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372171_12_C_T2.cel.gz",
+      "bytes": 2047655,
+      "sha256": "cd982585b4ccb56ab6422fee1d577067b80ad3eaa8c2ea92214204446730eb13"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372172_12_C_T4.cel.gz",
+      "bytes": 2035915,
+      "sha256": "961b65d9b0f563a89067475de53ef7c7f75f649c62290da4d6dbf537ee74b00b"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372173_12_C_T6.cel.gz",
+      "bytes": 1954917,
+      "sha256": "625721ed67a9ee88af41784beffb6ea4c63e495700e77280c39278ecddd70f4a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372174_14_A_T0.cel.gz",
+      "bytes": 1997581,
+      "sha256": "f12d1821781b57e449f8ef7d27e7c4928aaef45e63c40d03d160f4cf3a5621a7"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372175_14_A_T2.cel.gz",
+      "bytes": 1989049,
+      "sha256": "878d44a911101e40eb07389e05cb5c7c296ec2a96c6ae4bca4ed165765c926b4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372176_14_A_T4.cel.gz",
+      "bytes": 1968291,
+      "sha256": "5a84e3a5bb9e3e9ee6141eda4dae079836611de45298c70a1b3fc8a7461da566"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372177_14_A_T6.cel.gz",
+      "bytes": 1977442,
+      "sha256": "bf2c49d1987b693389bdf257271fc1e129baf5d38332de152cdfb7aa51afa029"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372178_14_B_T0.cel.gz",
+      "bytes": 2004364,
+      "sha256": "06d699eb7c86d895c28383c6e2cb8f8fd269c82982ffe295e18967c191ae1a33"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372179_14_B_T2.cel.gz",
+      "bytes": 1983669,
+      "sha256": "e4a294b08d6374db1f3450b5dc918d5c87a0c1f1261bf96b68e4409efe51c259"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372180_14_B_T4.cel.gz",
+      "bytes": 2007533,
+      "sha256": "0dc1d58d6d355ac3fa07d0a957b5d2c81a8c5c1657ba9e5970d435faa1b58a05"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372181_14_B_T6.cel.gz",
+      "bytes": 1991349,
+      "sha256": "82e7a8b997892fc4b710e89733daa255a2de338a759adefb08333777e7570252"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372182_14_C_T0.cel.gz",
+      "bytes": 2100163,
+      "sha256": "6172d87cc44a4e01094c99b4f4262a19fe131de4a15fe8d4f0621c26d1eaa5b2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372183_14_C_T2.cel.gz",
+      "bytes": 2083447,
+      "sha256": "9dfae47962083fe4344b4939caadb40fd6b6ec859b8921d7bed2fc55475014a8"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372184_14_C_T4.cel.gz",
+      "bytes": 2070345,
+      "sha256": "c260098fcd932d3b6f72c7b3bceb5237d1d874f8e24ca91ab71ed9022bfbbc76"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372185_14_C_T6.cel.gz",
+      "bytes": 2056887,
+      "sha256": "283b4f8952ca0cf97c35003e06cece73eaba7b110b536ee291634e82c3ac1829"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372186_15_A_T0.cel.gz",
+      "bytes": 2081157,
+      "sha256": "102576f88e9b41d9ee22c4bb6b73e36cc7a86edc41e9eabdc9c530ba490613a3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372187_15_A_T2.cel.gz",
+      "bytes": 2218409,
+      "sha256": "6718c73b9099c7a527a88c57b6f72f15472b3ce4e03773920f57e377f81ee031"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372188_15_A_T4.cel.gz",
+      "bytes": 2039388,
+      "sha256": "8b994c09be8773cf45db6484874c73d3a7ab536713062a30d0398c398f30aa29"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372189_15_A_T6.cel.gz",
+      "bytes": 2047900,
+      "sha256": "642da81402d383c65e58150f7e564ea1068d59c61688a30a14b6f4260ca1ab1e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372190_15_B_T0.cel.gz",
+      "bytes": 2056628,
+      "sha256": "7492e7aadc0369c779edbc048e3be92744956567007787cd8822d4b473bb0ef0"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372191_15_B_T2.cel.gz",
+      "bytes": 2052797,
+      "sha256": "04420f99bf22b03a36c7c383be3b36725f93155f469125f386108f9571f59fc4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372192_15_B_T4.cel.gz",
+      "bytes": 2017005,
+      "sha256": "e7158f07bf58c51b2ba3926fdc3bce406bef24e2cc53b5bfa1e31c86ccf57c19"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372193_15_B_T6.cel.gz",
+      "bytes": 2016112,
+      "sha256": "97191ebf23391e87273eb141e40789585b85775bbb6a8a68240298015ff9232c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372194_15_C_T0.cel.gz",
+      "bytes": 2038266,
+      "sha256": "e83e73d438b439e61175cc3ebff0c9c340715e97a1dd8afd26b2d268bd15f15e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372195_15_C_T2.cel.gz",
+      "bytes": 2026042,
+      "sha256": "6b4c2608c54965a48cacff34c25bec437d76f9ead69a22ce5b21bec38d65ab10"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372196_15_C_T4.cel.gz",
+      "bytes": 2018043,
+      "sha256": "e136a6ae6c8bb04fc0aead09fe78f789b77e617711e5e2b28cb42b30b9ad246f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372197_15_C_T6.cel.gz",
+      "bytes": 1996691,
+      "sha256": "dad4be7d1a5f1204bf72f5f8bc28387656bdeae4b93eeb4ffa7fe1e5ec127550"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372198_16_A_T0.cel.gz",
+      "bytes": 1983576,
+      "sha256": "0539906a323596575447735c1ee13bfc794bd840880f2b747aef284cbac75ba1"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372199_16_A_T2.cel.gz",
+      "bytes": 1984458,
+      "sha256": "dd261c3629314bcb21cc4d27289acb1012d7c7ffabac0f7bba8926ddb35508f2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372200_16_A_T4.cel.gz",
+      "bytes": 1979401,
+      "sha256": "cbfb9305b8129d5f980ad1daf87351a45e29825eb7d5998b3cca2e5db6f550cd"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372201_16_A_T6.cel.gz",
+      "bytes": 1995939,
+      "sha256": "5d1fafe31fd8ce3141baa64ccdeb20682611b698d691461621913445734b430d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372202_16_B_T0.cel.gz",
+      "bytes": 2013638,
+      "sha256": "c872c176ce622880c3e739e9cba32937bdabaffec0cb3a5433b13cdb7231fdec"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372203_16_B_T2.cel.gz",
+      "bytes": 2026001,
+      "sha256": "6da3648f73d7801ac8315232595e4896db0c6d5353ebd95b9e320360236c7884"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372204_16_B_T4.cel.gz",
+      "bytes": 2036689,
+      "sha256": "1b58690945f3a0f80350dc83c50f047ece69fe21ae7b5d5c76911adee4ec8a8f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372205_16_B_T6.cel.gz",
+      "bytes": 1945700,
+      "sha256": "df655c540e1e08b65fd3f2ffc1e2beb6319a5b845945a68c9b2b438f49724c11"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372206_16_C_T0.cel.gz",
+      "bytes": 2032531,
+      "sha256": "6b4080e22583a60b2367220bb488268ff7259e19a5e5d636de563014c7bd225c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372207_16_C_T2.cel.gz",
+      "bytes": 2062045,
+      "sha256": "37c4e6b68256a28589eba7d9322ed7426820910d956d08be616074beeb4a1f25"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372208_16_C_T4.cel.gz",
+      "bytes": 2057921,
+      "sha256": "3cb4bb3254c3fe17dbc7b1e25aa61cf9cc21d2ca806789b7f0ac77f4c931664e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372209_16_C_T6.cel.gz",
+      "bytes": 2040866,
+      "sha256": "58c0e02a4c83e6d9bd060d82de763a3e5dc75a853074ad95631aac2a3853350f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372210_17_A_T0.cel.gz",
+      "bytes": 2062330,
+      "sha256": "5a24246c02c7637cc40e1df9fb2f232878c061dfa202320424a05b5947f37e6f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372211_17_A_T2.cel.gz",
+      "bytes": 2083139,
+      "sha256": "0f8fdfe923ae0639aa5b5db597c17ff88af43284a6baffddf001581bf47639dc"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372212_17_A_T4.cel.gz",
+      "bytes": 2065661,
+      "sha256": "08fb1107cd0ab62afb6d7cb415edb714c90e8166e2fec56220aa26d3e930a9a5"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372213_17_A_T6.cel.gz",
+      "bytes": 2058518,
+      "sha256": "dd9c0058e769dae53d05fbc65add744ff8d328e4a0060b39ec7f743412345f30"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372214_17_B_T0.cel.gz",
+      "bytes": 2004796,
+      "sha256": "c4026479cd5143f2b9a46beee2b7eac1712895b0fe7182749b8abc6db92bdd7b"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372215_17_B_T2.cel.gz",
+      "bytes": 2033919,
+      "sha256": "53ccd6ff7ef5cd32280d5bd0533a6337bfe7d0be91a5f9cafc05050d67dfd40a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372216_17_B_T4.cel.gz",
+      "bytes": 2011495,
+      "sha256": "b7fa26e60cd53952e109250719b80cedbcb80941c7536ab15104e006584d30d7"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372217_17_B_T6.cel.gz",
+      "bytes": 2012265,
+      "sha256": "a69e8309b373ee3879ca5d0c4d0c518edc52ef932f25da30a2180d7c35ecdca4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372218_17_C_T0.cel.gz",
+      "bytes": 2036574,
+      "sha256": "db075f203421c7239c79fc490c3cfa808da435d52ee181d9b95e6cf03fb5395d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372219_17_C_T2.cel.gz",
+      "bytes": 2058569,
+      "sha256": "128fc47f54ddecf6f60fe0ea8720d6e5057edc4e4f520eaa6f7c04381addea36"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372220_17_C_T4.cel.gz",
+      "bytes": 1988253,
+      "sha256": "382850a62e514159932072bcf95a932125d73ff6444c554a03becf7e626f3949"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372221_17_C_T6.cel.gz",
+      "bytes": 2020818,
+      "sha256": "0e9552306ff5abc66994eb7b07c0b9ef6098bc5d951770353a57a3732468a0a3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372222_18_A_T0.cel.gz",
+      "bytes": 2049791,
+      "sha256": "d3f697e42606a003347de8c01179a41f6efdcb8b7b23146a84159416f0e648ad"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372223_18_A_T2.cel.gz",
+      "bytes": 2042099,
+      "sha256": "b6695c5ed5027bdfaf79334e6063faa5a77b46e9e95eebc7a528a01900f62410"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372224_18_A_T4.cel.gz",
+      "bytes": 1995320,
+      "sha256": "7a22b26f2c5e55fd59d59e0b3019a4aebd82e661a52e242c6c0ced9d18ec362d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372225_18_A_T6.cel.gz",
+      "bytes": 1990880,
+      "sha256": "f49acc27cd99e301021a031fb2a01e5454f323c667863327d6629812e6501092"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372226_18_B_T0.cel.gz",
+      "bytes": 2082562,
+      "sha256": "db66d49216d643fa189f96db80d13503932843c65c5f7c9f777154dfad014018"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372227_18_B_T2.cel.gz",
+      "bytes": 2075455,
+      "sha256": "13234b880c20be0364f06b9cf271440615c3079fcf725929324b56a73d0b1759"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372228_18_B_T4.cel.gz",
+      "bytes": 2036851,
+      "sha256": "293606f1a64b5d2b8435d59d235f21afde57f113fda3b65597f1fab389d60b7a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372229_18_B_T6.cel.gz",
+      "bytes": 2027591,
+      "sha256": "bc0be2abd50cc7f8f599a19aff91a58baa6ca8207ee51171e8c74b7b65555cd2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372230_18_C_T0.cel.gz",
+      "bytes": 2040715,
+      "sha256": "193e16450da481b3dc2c780fa7fc8d6d5bcc3999707363af27fbc29569176b42"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372231_18_C_T2.cel.gz",
+      "bytes": 2024788,
+      "sha256": "c302d582eb585ba62343117c6a68951837f3015b03125a8cced45f6832897722"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372232_18_C_T4.cel.gz",
+      "bytes": 2046898,
+      "sha256": "4655a64291c591e2f7d1a7c2e190e6e38cdf724bd96b7a6bc2e6ee16fb3633c1"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372233_18_C_T6.cel.gz",
+      "bytes": 2050223,
+      "sha256": "f75556635f99f805726279b3414275680a2e924911fb9cf0c379229fe97fc028"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372234_19_A_T0.cel.gz",
+      "bytes": 1950687,
+      "sha256": "5bf4e3852e40bb520ea66f6ec1076c107c9f7c3648f771087c250f7b3742bb1f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372235_19_A_T2.cel.gz",
+      "bytes": 1946212,
+      "sha256": "28801eab36df351e31f63714c39860917168eb0e86a7d473741912f9b1b8a05c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372236_19_A_T4.cel.gz",
+      "bytes": 1951344,
+      "sha256": "f1e6b45abf22257e36f78c2effff6dd38c5bfcff027175721af4caca3d6b78f2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372237_19_A_T6.cel.gz",
+      "bytes": 1960224,
+      "sha256": "6b3c47529f126d24ccec256eb9bad0f035c9cace395aecdd079c6c30c10fdbbe"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372238_19_B_T0.cel.gz",
+      "bytes": 2100090,
+      "sha256": "8165bfe5d554dd519d5dac4379423f9d75075617d3cc92836ded09ae00647fe5"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372239_19_B_T2.cel.gz",
+      "bytes": 2072221,
+      "sha256": "eb7214e75b4a93a2cd9f36a07afda623eb4080351d875718a7d4feef811ed134"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372240_19_B_T4.cel.gz",
+      "bytes": 2068890,
+      "sha256": "8df7f60be75beb27df3408ba59b139ec8265ed3b171fe97061d6a51fd288b84c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372241_19_B_T6.cel.gz",
+      "bytes": 2071469,
+      "sha256": "20a2b09e93b286cca23149370d35248620b62d5ec32c6534fedd68a1b7cc145d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372242_19_C_T0.cel.gz",
+      "bytes": 2007196,
+      "sha256": "800e3321ade55eec94b8136218fec36f7935908d69a65f23c7e16ae7ef98fd1a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372243_19_C_T2.cel.gz",
+      "bytes": 2055961,
+      "sha256": "fa60e8918f460eb8f514df73a5fa05c312fec5c0ce0dc07b396f56418d1dfcb7"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372244_19_C_T4.cel.gz",
+      "bytes": 2021712,
+      "sha256": "2a153d0c7c39b43a870d216f221975d640abfaee1aba63402c1359a4cb01592d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372245_19_C_T6.cel.gz",
+      "bytes": 1995259,
+      "sha256": "b292cf4aa62317187400ed9249cf9553b90ebb3010bd53f5ac7fd77d1fb59b3e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372246_21_A_T0.cel.gz",
+      "bytes": 2042505,
+      "sha256": "da077921b68fd39c58b3046c629b2b8bef301f61a2d0a705ca7b5c3111e97b86"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372247_21_A_T2.cel.gz",
+      "bytes": 2038851,
+      "sha256": "f80e8525ac5b6851dca7808202be190f5731d0d8ec4b7262e00b3f13f4d5265c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372248_21_A_T4.cel.gz",
+      "bytes": 1963044,
+      "sha256": "8cba554234d6cec0c1e42ce1275524ab5bb25895fa0e9d33269bbd981dad4835"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372249_21_A_T6.cel.gz",
+      "bytes": 1996807,
+      "sha256": "6251f478b9eaec5657491c5d90674f257f58beb94026590b516dc0cdd1a2d17e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372250_21_B_T0.cel.gz",
+      "bytes": 2100041,
+      "sha256": "4264eb4522b89baab1ea63108077698242c98193505c1cea4cddcdc45f71e44a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372251_21_B_T2.cel.gz",
+      "bytes": 2072257,
+      "sha256": "82d517b9d0c7fe8b053562607e78c1ab2cf30540a27a816900f6f0b06ea5ce4a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372252_21_B_T4.cel.gz",
+      "bytes": 2072566,
+      "sha256": "2da0ae08f264414dab12026a6f2b61e104d09903996e90fc0adbde595f255871"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372253_21_B_T6.cel.gz",
+      "bytes": 2066921,
+      "sha256": "5808f9cf8c7955c859820a6ec915a14ff68738cefffd1408be8fdc78e7eea45b"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372254_21_C_T0.cel.gz",
+      "bytes": 2049436,
+      "sha256": "e26230afe0830b29a1c8e7ee4b9c4edac575ac013038d17a2f41b24af62ab47d"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372255_21_C_T2.cel.gz",
+      "bytes": 2069732,
+      "sha256": "79a5d57e45d6ac8faf290021d0fd477cc8d1461cd6eb0b741904c96b45a5dc47"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372256_21_C_T4.cel.gz",
+      "bytes": 2047384,
+      "sha256": "40ad66e230fed5d6810bac059be500dea67cf04c909b8787eafeaacbdbe996dd"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372257_21_C_T6.cel.gz",
+      "bytes": 2074928,
+      "sha256": "e952d3de554119d17f108f48a028956ae77c45226e752056c33197d6f5ba5c92"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372258_22_A_T0.cel.gz",
+      "bytes": 2044437,
+      "sha256": "757b6910c2b2853ae01c057f5c3667e428d2beb5435e29f3784c14ca6d5592ff"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372259_22_A_T2.cel.gz",
+      "bytes": 2008203,
+      "sha256": "c1ce6529fac448e3213a62d61843e2dd5b0203bd80442f31fd6ebcc4b090beb9"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372260_22_A_T4.cel.gz",
+      "bytes": 2018898,
+      "sha256": "a3eb14d3a971b75b1760a0ea5b18242592978fff98c9ebc979c89fd127ad77cb"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372261_22_A_T6.cel.gz",
+      "bytes": 2013711,
+      "sha256": "772483c038690b298b5a88c71ea07d5510164a87c272514e7e7b49ea53877961"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372262_22_B_T0.cel.gz",
+      "bytes": 2035125,
+      "sha256": "5ab283b745ab73ec5455f1f9e4307a1420068c424d6f364713cefe276e8165d2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372263_22_B_T2.cel.gz",
+      "bytes": 2051451,
+      "sha256": "d153373a9809adcfe121af0d4468b70c0090c711c4f735119c9762b651958978"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372264_22_B_T4.cel.gz",
+      "bytes": 2093659,
+      "sha256": "95767020f58e15ccd48e3ed33b0c5f11b7316693d67d33bbd0908cf5cc7bf48c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372265_22_B_T6.cel.gz",
+      "bytes": 2022231,
+      "sha256": "3e546b529f30347486393ef9e735f04046e6cd1ebd168a37c9a388137c670547"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372266_22_C_T0.cel.gz",
+      "bytes": 2114238,
+      "sha256": "ed6c73432d9cab123854f3dd0f5bd4c08ec6f781f88c4783e2e2c99e55f3c067"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372267_22_C_T2.cel.gz",
+      "bytes": 2088643,
+      "sha256": "f1927916895a2893bc6fce039abd8fdbea9f782e0fe8836747a1056ae567ff78"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372268_22_C_T4.cel.gz",
+      "bytes": 2032347,
+      "sha256": "f4df1ec13749c2393a452b8066f332b4e09f38aa3ac7be52d1073929e0722ae8"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372269_22_C_T6.cel.gz",
+      "bytes": 2002806,
+      "sha256": "7eb8190c6b8c2a2529de8e6a2ed0f8a94b232fe3f17abf6cb772b5a2c3032cf3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372270_23_A_T0.cel.gz",
+      "bytes": 2032345,
+      "sha256": "f95af9f77003ab3795fa41c1e38dc937731a888cd0f2d8d6971fb2d125bbedc0"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372271_23_A_T2.cel.gz",
+      "bytes": 2048021,
+      "sha256": "2d0514bfd81e5a77ae42c8f845ba3abefa8fbc145d147d33a534127076dca865"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372272_23_A_T4.cel.gz",
+      "bytes": 2053983,
+      "sha256": "e82651a53529abeb3136af54dcd4bcb02f5c1eacebaf49a219b63eeb0cee7fac"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372273_23_A_T6.cel.gz",
+      "bytes": 1993753,
+      "sha256": "34fc11bf179457372454e67a65601765da91855790b4690c5b1dc89a90c841ce"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372274_23_B_T0.cel.gz",
+      "bytes": 2072991,
+      "sha256": "b29fc058c69da27485fb4d2daf9187a4fa0f3edb8c510ac4ee28bfbfba5a9702"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372275_23_B_T2.cel.gz",
+      "bytes": 2058116,
+      "sha256": "bca008c7b1d79dc80e3687546015c6b4bd110f8d95ff9cc1406ebbb6888553b6"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372276_23_B_T4.cel.gz",
+      "bytes": 2037320,
+      "sha256": "1e67b241d198eebc74d94ced9080e12e6d24d426404782c07c801699e39e1dd3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372277_23_B_T6.cel.gz",
+      "bytes": 2018455,
+      "sha256": "d50f985176709e7afe8de8cf723282e5d312905a2357791f234c097f8de83d2c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372278_23_C_T0.cel.gz",
+      "bytes": 2021076,
+      "sha256": "012c6765f125d310aa9439fadb2303074c772b14bfbb7efabdc45244f04099b2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372279_23_C_T2.cel.gz",
+      "bytes": 2045894,
+      "sha256": "71f0233c90c0d8e998bbfab9d30d52bec2cb77464e556c226d45de0980be44ed"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372280_23_C_T4.cel.gz",
+      "bytes": 2014919,
+      "sha256": "cc52ad25ca865c1577da7d67c48ca130ac40550da11bbda1860200d332519b1a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372281_23_C_T6.cel.gz",
+      "bytes": 1987114,
+      "sha256": "037219a61904094b117377b3d2526fa052ef3e9c61080c87308a73d90787c4d2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372282_24_A_T0.cel.gz",
+      "bytes": 2008114,
+      "sha256": "8cfea0ec38dc15189fc3d27713c1995e29c1ba2d8624acaefbcc55c25ad23879"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372283_24_A_T2.cel.gz",
+      "bytes": 1965642,
+      "sha256": "68f9965454ac6857c696c5207fca5aa30587404aae5f015a1b33deeaf7c57754"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372284_24_A_T4.cel.gz",
+      "bytes": 1947480,
+      "sha256": "a26aeeeca2f765296b3f5cd10177a2a9508303f723990428c388db2a39f46327"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372285_24_A_T6.cel.gz",
+      "bytes": 1978337,
+      "sha256": "c029a62515ed244e973c9c65156f6fcf3a0d7479a2b7138c71f8de14ea7410f3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372286_24_B_T0.cel.gz",
+      "bytes": 2026009,
+      "sha256": "96c2b4e138de315df8cf6b14927c21a77de786f8fc4eb11d0dc6d0b51867981c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372287_24_B_T2.cel.gz",
+      "bytes": 2002865,
+      "sha256": "440e7bfe71b516c10a981d5b30a9493688be29ff97ca2f9c9bd6e0659ac7d798"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372288_24_B_T4.cel.gz",
+      "bytes": 2045806,
+      "sha256": "7193381310a513907e8ccc1b553eeb184e0df85974e01debef39678f7f40d1af"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372289_24_B_T6.cel.gz",
+      "bytes": 1974635,
+      "sha256": "d07d9ea3f9cb18e8679a662eaca89001d27f6e4bf8a5271e030489ba88a364b2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372290_24_C_T0.cel.gz",
+      "bytes": 1994406,
+      "sha256": "667fb3ac9cd74add799fcdac980ef9cf3f625c05d78084e5a842a7cef63275b1"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372291_24_C_T2.cel.gz",
+      "bytes": 1983271,
+      "sha256": "51c2ef89dce758877b0f0f4ef37b639a6d2593859c9b5a8c24d3c74a900e6f12"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372292_24_C_T4.cel.gz",
+      "bytes": 1966032,
+      "sha256": "e521d347d1b73b2dada2824564766ee518a88192b4b5f23c906ba039b68ad663"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372293_24_C_T6.cel.gz",
+      "bytes": 1994273,
+      "sha256": "8bd8b69a44f89c07d8311f06736e27e7ff73bfe029574beb510e1b0ca2d16b1a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372294_25_A_T0.cel.gz",
+      "bytes": 2075385,
+      "sha256": "5d6454de8f9eb7d59f5f2500bd10294d58b62c28afeada4f8183c1a3f23480b4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372295_25_A_T2.cel.gz",
+      "bytes": 2000731,
+      "sha256": "0150b098f882d608fc5fbeedcaa497eab1fe85402b7997e4a87835a8f37262bd"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372296_25_A_T4.cel.gz",
+      "bytes": 2011676,
+      "sha256": "51ae3c2410f46edc440233a0aea3c0cf5ff257f102658cacbd0edfa5998a7dde"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372297_25_A_T6.cel.gz",
+      "bytes": 2038688,
+      "sha256": "6ca7c370e9940c9953c051537bae09a3a6dde8808f01938319439807192528c0"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372298_25_B_T0.cel.gz",
+      "bytes": 2037640,
+      "sha256": "df7b3a1b79092800eeffaf599e0b4774c87a3392ff430744584b2039e7fa9460"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372299_25_B_T2.cel.gz",
+      "bytes": 1991429,
+      "sha256": "9b7b0557bccca6d284bf9b9f6a19a56009e39b52764c26ae76c63c80a305ebea"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372300_25_B_T4.cel.gz",
+      "bytes": 1987447,
+      "sha256": "86e8365726e0211d700549fba673138eaf15f92e002372ea4341bc2668305b4e"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372301_25_B_T6.cel.gz",
+      "bytes": 1964377,
+      "sha256": "9ac2238ef9f26bda1075749cbb40c777ab05f45765604224ecfe12805900af03"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372302_25_C_T0.cel.gz",
+      "bytes": 1993311,
+      "sha256": "c99b89de5fa8e12111c1cec1f291cdee5232381d07e3ad6e0cc80bef56b6d518"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372303_25_C_T2.cel.gz",
+      "bytes": 2045935,
+      "sha256": "03541074a54bc5010befade15e120de127e1ae702bcbeb3cdb033d7158ad825c"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372304_25_C_T4.cel.gz",
+      "bytes": 2008583,
+      "sha256": "9f4b048478f71f60c457f529fdba2a4fa235d48a3135f0223f489457c153bfbd"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372305_25_C_T6.cel.gz",
+      "bytes": 1989107,
+      "sha256": "43a5439f301c6e2267441cecccca62d2e7dccf02b13c7bcc769b32900caeb00f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372306_28_A_T0.cel.gz",
+      "bytes": 2041662,
+      "sha256": "4d4f7a2c39583ee2f7cb262cd749a7020b988f51570f559a7669afaa8684a502"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372307_28_A_T2.cel.gz",
+      "bytes": 2037277,
+      "sha256": "0fd1366c8b6ec522646fdbdc281d8411395030f328fbc108fc743bf92b07f724"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372308_28_A_T4.cel.gz",
+      "bytes": 2022326,
+      "sha256": "85ed4cb4b9b8627b535fd880a17506a7da0fa9c0a8af1988e1763a6b05c163c2"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372309_28_A_T6.cel.gz",
+      "bytes": 2039089,
+      "sha256": "1cc71fe3cfbc3805cabcf5456b3aea1df80fb7401466429ecb2cd514046d1c48"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372310_28_B_T0.cel.gz",
+      "bytes": 2111427,
+      "sha256": "872cd34114bc559c86d1cba96d5a5ae344d1c55f77bcda8f63ab39cbf9faafd6"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372311_28_B_T2.cel.gz",
+      "bytes": 2088393,
+      "sha256": "51b3e7c8256a0f868f1ff63b6078751477ad582b6e3c00c57f6014d6a731bd0b"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372312_28_B_T4.cel.gz",
+      "bytes": 2034197,
+      "sha256": "f4114f22de77f8bd69a6ad0f680a54dc70d50bb9bba48d7f2b8dd6bf9feb8a30"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372313_28_B_T6.cel.gz",
+      "bytes": 2019332,
+      "sha256": "7a75cbab968a51725dc3a24fdf613ce23d5b3d7a9d5d3136b2bfb1d501c244ae"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372314_28_C_T0.cel.gz",
+      "bytes": 2141765,
+      "sha256": "f05bde602fa087223455d238f5bb3467ba846f418fccb2a9f5e41bccbe688bee"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372315_28_C_T2.cel.gz",
+      "bytes": 2135439,
+      "sha256": "716279919c6ebca08062058fbcb0e608a4948c5491c41890f56cd04c93a00b6a"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372316_28_C_T4.cel.gz",
+      "bytes": 2100604,
+      "sha256": "13a2252fb57b1c0c97edfd7f39e7815238ab2a0fcd078c934569bbf9a61ed475"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372317_28_C_T6.cel.gz",
+      "bytes": 2105936,
+      "sha256": "9830bb964b08e9a29b53ea1211236a1a93fa88fd98ef104699a544b5e33bf8a4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372318_29_A_T0.cel.gz",
+      "bytes": 2063464,
+      "sha256": "d797a5bc5d4c5290ec09efd4b567da168294399bd9b1642e09750ff1a2dfd862"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372319_29_A_T2.cel.gz",
+      "bytes": 2086024,
+      "sha256": "08612b7db813bcf1cbcda544a670896cf58c979d45e3fbeece704355cd309d36"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372320_29_A_T4.cel.gz",
+      "bytes": 2089635,
+      "sha256": "c9433ffc46326226cd854bb51beca226caa21f70fa0eb43de8f828a68adc9d2f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372321_29_A_T6.cel.gz",
+      "bytes": 2040757,
+      "sha256": "1975fc43907ce734786817c250f21729aae65186059842413adca2a7c8a70769"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372322_29_B_T0.cel.gz",
+      "bytes": 2010227,
+      "sha256": "6afe6e4fc0488a8ce957d84f6600cd92c16aafdae6f2a933b91d2e908d9dada5"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372323_29_B_T2.cel.gz",
+      "bytes": 2054986,
+      "sha256": "4aa5404b03279231dcf874ab5f15e1e7ec7295208fedd5efbdddfb6fbf03fe11"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372324_29_B_T4.cel.gz",
+      "bytes": 2041835,
+      "sha256": "abee18502295236b11ae1fa7488738b41204c64a13120cc416e22dcf00555861"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372325_29_B_T6.cel.gz",
+      "bytes": 2052913,
+      "sha256": "f005f46a2419ee15d14e727238e04d89e678ca13118be15d93f6e150f3e9c924"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372326_29_C_T0.cel.gz",
+      "bytes": 2088980,
+      "sha256": "9a6912c74c968e13e0af795b2cdde1fa8a4014e25e3703e99dffb90e55389829"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372327_29_C_T2.cel.gz",
+      "bytes": 2083999,
+      "sha256": "acb674a441a649512a6b3e6a6fd1fe6af074720394e9020ca56219e980580a15"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372328_29_C_T4.cel.gz",
+      "bytes": 2067736,
+      "sha256": "86042952d8099dc4f5c75ba40fc77fcb19ff503dd0221b7fe403e2caa045d387"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/GSM1372329_29_C_T6.cel.gz",
+      "bytes": 2061393,
+      "sha256": "ce1ee2d8558a323f8cd50d06bdf15b9050649e069b24da832dc7b7ecbdcace39"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/artifacts/independent_geo_replay_20261003_v2/GSE56960/design/sample_design.tsv",
+      "bytes": 22445,
+      "sha256": "e4d6722fc17f3a21884d7e011c16eceebf97e89475d1a897926d3beef7bd2865"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/raw/geo/download_manifest.json",
+      "bytes": 9244,
+      "sha256": "41189fdc80ee377907219ff966b021f3d2e9eed3495d1d281995a748047640d3"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/data/processed/geo/GSE56960/raw_files/extraction_manifest.json",
+      "bytes": 27752,
+      "sha256": "63f168a8fea71aa99851448ac755c049e090c0359b4e497e4292ab0201272eca"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-environment-linux-64.lock.txt",
+      "bytes": 33905,
+      "sha256": "5eafa831151e281741bfa37c43a4a99896272c0c8f34f930b875f1da6d13845f"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/toolchain/r-overlay-lock.txt",
+      "bytes": 352,
+      "sha256": "9eb8078427fe7eb54398d79a0533445aaebeaf244450a857f0ab7de0e802da4a"
+    }
+  ],
+  "sample_count": 168,
+  "independent_people": 14,
+  "people_per_status": {
+    "NormalWeight": 7,
+    "Obese": 7
+  },
+  "samples_per_person": {
+    "12": 12,
+    "14": 12,
+    "15": 12,
+    "16": 12,
+    "17": 12,
+    "18": 12,
+    "19": 12,
+    "21": 12,
+    "22": 12,
+    "23": 12,
+    "24": 12,
+    "25": 12,
+    "28": 12,
+    "29": 12
+  },
+  "meal_doses_kcal": [
+    "500",
+    "1000",
+    "1500"
+  ],
+  "timepoints": [
+    "0h",
+    "2h",
+    "4h",
+    "6h"
+  ],
+  "repeated_measures_correlation": 0.2038,
+  "normalization": "affy::rma background correction, quantile normalization, and probe summarization",
+  "preprocessing_threads": "1",
+  "gene_level_aggregation": "Unambiguous HGU219 probe-to-Entrez mapping; ambiguous targets excluded; limma::avereps within Entrez gene",
+  "design": "condition means by metabolic status × meal kcal × timepoint; subject-blocked duplicateCorrelation",
+  "contrast_count": 12,
+  "fgsea_random_seed": 20261001,
+  "multiple_testing": "Primary BH across all genes times 12 dose-change contrasts; pathway family separate; within-contrast q retained",
+  "result_files": [
+    "gene_effects.tsv.gz",
+    "pathway_effects.tsv.gz"
+  ],
+  "auxiliary_files": [
+    "sample_metadata.tsv",
+    "sample_qc.tsv",
+    "rma_qc.pdf"
+  ],
+  "effect_scope": "cohort-level response to a mixed high-fat challenge; not component-specific and not an individual prediction",
+  "software_versions": {
+    "R": "4.5.3",
+    "affy": "1.88.0",
+    "preprocessCore": "1.72.0",
+    "hgu219.db": "3.2.3",
+    "limma": "3.66.0",
+    "reactome.db": "1.95.0"
+  }
+}

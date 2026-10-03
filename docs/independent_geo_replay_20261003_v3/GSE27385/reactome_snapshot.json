@@ -1,0 +1,10 @@
+{
+  "package": "reactome.db",
+  "package_version": "1.95.0",
+  "file_sha256": "c62a39dbab34392d3b08a7a985d56520295cc4eef7dd233576d2c399b2b80e49",
+  "database_metadata": {
+    "name": ["DBSCHEMA", "DBSCHEMAVERSION", "SOURCENAME", "SOURCEURL", "SOURCEDATE", "Supporting package", "Db type"],
+    "value": ["REACTOME_DB", "95", "Reactome", "https://reactome.org/download/current/databases/gk_current.sql.gz", "20459", "AnnotationDbi", "ReactomeDb"]
+  },
+  "release_status": "Legacy package snapshot frozen as exact gene-set file; not relabeled as current Reactome release"
+}

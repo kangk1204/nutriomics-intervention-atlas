@@ -1,0 +1,52 @@
+{
+  "accession": "ST001257",
+  "analysis_id": "AN002086",
+  "created_at": "2026-10-03T05:30:33.326322+00:00",
+  "independent_people": 19,
+  "urine_samples": 76,
+  "food_preparations": 14,
+  "analytical_features": 11693,
+  "finite_values": 147905,
+  "missing_values": 904465,
+  "zero_values": 0,
+  "name_factor_discordance": [
+    "S31-119 Post Po",
+    "S31-119 Post-Ch"
+  ],
+  "units": "Abundance (Counts Log2 Transformed)",
+  "second_log_transform_applied": false,
+  "sequence_and_period_metadata_available": false,
+  "identified_metabolites_confirmed": 0,
+  "features_are_neutral_mass_retention_time_pairs": true,
+  "patient_multiomics_pairing_confirmed": false,
+  "inputs": [
+    {
+      "name": "untargeted.tsv",
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\untargeted.tsv",
+      "sha256": "e457f183ca726506f68acba696235417c1bf79c9aff893a97e8e23e1412d03c9",
+      "bytes": 4076615,
+      "source_url": "https://www.metabolomicsworkbench.org/rest/study/analysis_id/AN002086/untarg_data"
+    },
+    {
+      "name": "factors.json",
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\factors.json",
+      "sha256": "6b2535a651e4ae7c032417253f2623161af00d958ea8aac108c745de43310837",
+      "bytes": 20317,
+      "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/factors"
+    },
+    {
+      "name": "analysis.json",
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\analysis.json",
+      "sha256": "a7ad7e9ea08c240aeb5b9e77749e43edf521ddafef189331b9836288812d88b1",
+      "bytes": 534,
+      "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/analysis"
+    },
+    {
+      "name": "mwtab.txt",
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\mwtab.txt",
+      "sha256": "bb74f07d15e695291a0dcb69bae823f57a69aef539e9e5c4ebf2f1035b47d6e5",
+      "bytes": 20223,
+      "source_url": "https://www.metabolomicsworkbench.org/data/study_textformat_view.php?ANALYSIS_ID=AN002086&MODE=d&STUDY_ID=ST001257"
+    }
+  ]
+}

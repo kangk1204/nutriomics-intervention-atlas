@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-10-03T05:30:32.627860+00:00",
+  "accessions": [
+    "ST001257"
+  ],
+  "unit": "Participant; repeated-measures designs retained",
+  "old_result_values_used_as_input": false,
+  "numeric_reproduction_atol": 1e-10,
+  "numeric_reproduction_rtol": 1e-08,
+  "raw_CEL_reprocessing_for_GSE56960_GSE27385": true,
+  "original_counts_for_GSE127530": true,
+  "ST001257_source_processed_log2_no_second_log": true
+}

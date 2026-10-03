@@ -1,0 +1,543 @@
+{
+  "accession": "GSE127530",
+  "audit_version": "gse127530-count-audit-v2",
+  "retrieved_utc": "2026-10-03T05:39:08.672195+00:00",
+  "status": "verified_fixed_cleanup",
+  "selected_analysis_file": "GSE127530_fixed_combinedCounts.txt.gz",
+  "release_decision": "Use the fixed file: all retained gene counts are unchanged; the original-only rows are four non-gene count summaries and two duplicate TTTY17B rows.",
+  "payload_comparison": {
+    "identical_feature_value_rows": false,
+    "original_only_row_count": 6,
+    "fixed_only_row_count": 0,
+    "changed_feature_row_count": 0,
+    "changed_count_cell_count": 0,
+    "original_only_examples": [
+      "N_ambiguous",
+      "N_multimapping",
+      "N_noFeature",
+      "N_unmapped",
+      "TTTY17B",
+      "TTTY17B"
+    ],
+    "fixed_only_examples": [],
+    "original_only_rows": [
+      {
+        "gene_symbol": "N_ambiguous",
+        "duplicate_symbol_occurrence": 1
+      },
+      {
+        "gene_symbol": "N_multimapping",
+        "duplicate_symbol_occurrence": 1
+      },
+      {
+        "gene_symbol": "N_noFeature",
+        "duplicate_symbol_occurrence": 1
+      },
+      {
+        "gene_symbol": "N_unmapped",
+        "duplicate_symbol_occurrence": 1
+      },
+      {
+        "gene_symbol": "TTTY17B",
+        "duplicate_symbol_occurrence": 1
+      },
+      {
+        "gene_symbol": "TTTY17B",
+        "duplicate_symbol_occurrence": 2
+      }
+    ],
+    "changed_row_examples": []
+  },
+  "sample_design": {
+    "people": 5,
+    "study_days_per_person": 3,
+    "timepoints_per_day": 3,
+    "timepoints": [
+      "fast",
+      "3hr",
+      "6hr"
+    ],
+    "samples": [
+      {
+        "sample_label": "S17-D1-3hr_S6",
+        "subject_id": "S17",
+        "study_day": 1,
+        "timepoint": "3hr",
+        "library_suffix": 6,
+        "geo_sample_accession": "GSM3635877",
+        "geo_sample_title": "S17-D1-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D1-6hr_S7",
+        "subject_id": "S17",
+        "study_day": 1,
+        "timepoint": "6hr",
+        "library_suffix": 7,
+        "geo_sample_accession": "GSM3635878",
+        "geo_sample_title": "S17-D1-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D1-Fast_S5",
+        "subject_id": "S17",
+        "study_day": 1,
+        "timepoint": "fast",
+        "library_suffix": 5,
+        "geo_sample_accession": "GSM3635876",
+        "geo_sample_title": "S17-D1-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D2-3hr_S9",
+        "subject_id": "S17",
+        "study_day": 2,
+        "timepoint": "3hr",
+        "library_suffix": 9,
+        "geo_sample_accession": "GSM3635880",
+        "geo_sample_title": "S17-D2-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D2-6hr_S10",
+        "subject_id": "S17",
+        "study_day": 2,
+        "timepoint": "6hr",
+        "library_suffix": 10,
+        "geo_sample_accession": "GSM3635881",
+        "geo_sample_title": "S17-D2-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D2-Fast_S8",
+        "subject_id": "S17",
+        "study_day": 2,
+        "timepoint": "fast",
+        "library_suffix": 8,
+        "geo_sample_accession": "GSM3635879",
+        "geo_sample_title": "S17-D2-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D3-3hr_S12",
+        "subject_id": "S17",
+        "study_day": 3,
+        "timepoint": "3hr",
+        "library_suffix": 12,
+        "geo_sample_accession": "GSM3635883",
+        "geo_sample_title": "S17-D3-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D3-6hr_S13",
+        "subject_id": "S17",
+        "study_day": 3,
+        "timepoint": "6hr",
+        "library_suffix": 13,
+        "geo_sample_accession": "GSM3635884",
+        "geo_sample_title": "S17-D3-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S17-D3-Fast_S11",
+        "subject_id": "S17",
+        "study_day": 3,
+        "timepoint": "fast",
+        "library_suffix": 11,
+        "geo_sample_accession": "GSM3635882",
+        "geo_sample_title": "S17-D3-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D1-3hr_S15",
+        "subject_id": "S21",
+        "study_day": 1,
+        "timepoint": "3hr",
+        "library_suffix": 15,
+        "geo_sample_accession": "GSM3635886",
+        "geo_sample_title": "S21-D1-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D1-6hr_S16",
+        "subject_id": "S21",
+        "study_day": 1,
+        "timepoint": "6hr",
+        "library_suffix": 16,
+        "geo_sample_accession": "GSM3635887",
+        "geo_sample_title": "S21-D1-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D1-Fast_S14",
+        "subject_id": "S21",
+        "study_day": 1,
+        "timepoint": "fast",
+        "library_suffix": 14,
+        "geo_sample_accession": "GSM3635885",
+        "geo_sample_title": "S21-D1-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D2-3hr_S18",
+        "subject_id": "S21",
+        "study_day": 2,
+        "timepoint": "3hr",
+        "library_suffix": 18,
+        "geo_sample_accession": "GSM3635889",
+        "geo_sample_title": "S21-D2-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D2-6hr_S19",
+        "subject_id": "S21",
+        "study_day": 2,
+        "timepoint": "6hr",
+        "library_suffix": 19,
+        "geo_sample_accession": "GSM3635890",
+        "geo_sample_title": "S21-D2-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D2-Fast_S17",
+        "subject_id": "S21",
+        "study_day": 2,
+        "timepoint": "fast",
+        "library_suffix": 17,
+        "geo_sample_accession": "GSM3635888",
+        "geo_sample_title": "S21-D2-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D3-3hr_S21",
+        "subject_id": "S21",
+        "study_day": 3,
+        "timepoint": "3hr",
+        "library_suffix": 21,
+        "geo_sample_accession": "GSM3635892",
+        "geo_sample_title": "S21-D3-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D3-6hr_S22",
+        "subject_id": "S21",
+        "study_day": 3,
+        "timepoint": "6hr",
+        "library_suffix": 22,
+        "geo_sample_accession": "GSM3635893",
+        "geo_sample_title": "S21-D3-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S21-D3-Fast_S20",
+        "subject_id": "S21",
+        "study_day": 3,
+        "timepoint": "fast",
+        "library_suffix": 20,
+        "geo_sample_accession": "GSM3635891",
+        "geo_sample_title": "S21-D3-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D1-3hr_S24",
+        "subject_id": "S27",
+        "study_day": 1,
+        "timepoint": "3hr",
+        "library_suffix": 24,
+        "geo_sample_accession": "GSM3635895",
+        "geo_sample_title": "S27-D1-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D1-6hr_S25",
+        "subject_id": "S27",
+        "study_day": 1,
+        "timepoint": "6hr",
+        "library_suffix": 25,
+        "geo_sample_accession": "GSM3635896",
+        "geo_sample_title": "S27-D1-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D1-Fast_S23",
+        "subject_id": "S27",
+        "study_day": 1,
+        "timepoint": "fast",
+        "library_suffix": 23,
+        "geo_sample_accession": "GSM3635894",
+        "geo_sample_title": "S27-D1-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D2-3hr_S27",
+        "subject_id": "S27",
+        "study_day": 2,
+        "timepoint": "3hr",
+        "library_suffix": 27,
+        "geo_sample_accession": "GSM3635898",
+        "geo_sample_title": "S27-D2-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D2-6hr_S28",
+        "subject_id": "S27",
+        "study_day": 2,
+        "timepoint": "6hr",
+        "library_suffix": 28,
+        "geo_sample_accession": "GSM3635899",
+        "geo_sample_title": "S27-D2-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D2-Fast_S26",
+        "subject_id": "S27",
+        "study_day": 2,
+        "timepoint": "fast",
+        "library_suffix": 26,
+        "geo_sample_accession": "GSM3635897",
+        "geo_sample_title": "S27-D2-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D3-3hr_S30",
+        "subject_id": "S27",
+        "study_day": 3,
+        "timepoint": "3hr",
+        "library_suffix": 30,
+        "geo_sample_accession": "GSM3635901",
+        "geo_sample_title": "S27-D3-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D3-6hr_S31",
+        "subject_id": "S27",
+        "study_day": 3,
+        "timepoint": "6hr",
+        "library_suffix": 31,
+        "geo_sample_accession": "GSM3635902",
+        "geo_sample_title": "S27-D3-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S27-D3-Fast_S29",
+        "subject_id": "S27",
+        "study_day": 3,
+        "timepoint": "fast",
+        "library_suffix": 29,
+        "geo_sample_accession": "GSM3635900",
+        "geo_sample_title": "S27-D3-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D1-3hr_S63",
+        "subject_id": "S2",
+        "study_day": 1,
+        "timepoint": "3hr",
+        "library_suffix": 63,
+        "geo_sample_accession": "GSM3635859",
+        "geo_sample_title": "S2-D1-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D1-6hr_S64",
+        "subject_id": "S2",
+        "study_day": 1,
+        "timepoint": "6hr",
+        "library_suffix": 64,
+        "geo_sample_accession": "GSM3635860",
+        "geo_sample_title": "S2-D1-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D1-Fast_S62",
+        "subject_id": "S2",
+        "study_day": 1,
+        "timepoint": "fast",
+        "library_suffix": 62,
+        "geo_sample_accession": "GSM3635858",
+        "geo_sample_title": "S2-D1-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D2-3hr_S66",
+        "subject_id": "S2",
+        "study_day": 2,
+        "timepoint": "3hr",
+        "library_suffix": 66,
+        "geo_sample_accession": "GSM3635862",
+        "geo_sample_title": "S2-D2-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D2-6hr_S67",
+        "subject_id": "S2",
+        "study_day": 2,
+        "timepoint": "6hr",
+        "library_suffix": 67,
+        "geo_sample_accession": "GSM3635863",
+        "geo_sample_title": "S2-D2-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D2-Fast_S65",
+        "subject_id": "S2",
+        "study_day": 2,
+        "timepoint": "fast",
+        "library_suffix": 65,
+        "geo_sample_accession": "GSM3635861",
+        "geo_sample_title": "S2-D2-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D3-3hr_S69",
+        "subject_id": "S2",
+        "study_day": 3,
+        "timepoint": "3hr",
+        "library_suffix": 69,
+        "geo_sample_accession": "GSM3635865",
+        "geo_sample_title": "S2-D3-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D3-6hr_S70",
+        "subject_id": "S2",
+        "study_day": 3,
+        "timepoint": "6hr",
+        "library_suffix": 70,
+        "geo_sample_accession": "GSM3635866",
+        "geo_sample_title": "S2-D3-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S2-D3-Fast_S68",
+        "subject_id": "S2",
+        "study_day": 3,
+        "timepoint": "fast",
+        "library_suffix": 68,
+        "geo_sample_accession": "GSM3635864",
+        "geo_sample_title": "S2-D3-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D1-3hr_S72",
+        "subject_id": "S9",
+        "study_day": 1,
+        "timepoint": "3hr",
+        "library_suffix": 72,
+        "geo_sample_accession": "GSM3635868",
+        "geo_sample_title": "S9-D1-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D1-6hr_S73",
+        "subject_id": "S9",
+        "study_day": 1,
+        "timepoint": "6hr",
+        "library_suffix": 73,
+        "geo_sample_accession": "GSM3635869",
+        "geo_sample_title": "S9-D1-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D1-Fast_S71",
+        "subject_id": "S9",
+        "study_day": 1,
+        "timepoint": "fast",
+        "library_suffix": 71,
+        "geo_sample_accession": "GSM3635867",
+        "geo_sample_title": "S9-D1-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D2-3hr_S75",
+        "subject_id": "S9",
+        "study_day": 2,
+        "timepoint": "3hr",
+        "library_suffix": 75,
+        "geo_sample_accession": "GSM3635871",
+        "geo_sample_title": "S9-D2-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D2-6hr_S76",
+        "subject_id": "S9",
+        "study_day": 2,
+        "timepoint": "6hr",
+        "library_suffix": 76,
+        "geo_sample_accession": "GSM3635872",
+        "geo_sample_title": "S9-D2-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D2-Fast_S74",
+        "subject_id": "S9",
+        "study_day": 2,
+        "timepoint": "fast",
+        "library_suffix": 74,
+        "geo_sample_accession": "GSM3635870",
+        "geo_sample_title": "S9-D2-Fast",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D3-3hr_S3",
+        "subject_id": "S9",
+        "study_day": 3,
+        "timepoint": "3hr",
+        "library_suffix": 3,
+        "geo_sample_accession": "GSM3635874",
+        "geo_sample_title": "S9-D3-3hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D3-6hr_S4",
+        "subject_id": "S9",
+        "study_day": 3,
+        "timepoint": "6hr",
+        "library_suffix": 4,
+        "geo_sample_accession": "GSM3635875",
+        "geo_sample_title": "S9-D3-6hr",
+        "geo_sample_match_count": 1
+      },
+      {
+        "sample_label": "S9-D3-Fast_S2",
+        "subject_id": "S9",
+        "study_day": 3,
+        "timepoint": "fast",
+        "library_suffix": 2,
+        "geo_sample_accession": "GSM3635873",
+        "geo_sample_title": "S9-D3-Fast",
+        "geo_sample_match_count": 1
+      }
+    ],
+    "geo_sample_crosswalk_status": "complete",
+    "geo_family_soft_sample_records": 45,
+    "independent_person_count": 5
+  },
+  "files": [
+    {
+      "name": "GSE127530_combinedCounts.txt.gz",
+      "compressed_sha256": "ff7418903f4654005bd206aea9985d8c8c7d4a8c62dbac81a7aae6ec72ff8c3d",
+      "uncompressed_data_sha256": "5b49f0e5ab92a90070ebbadbd7e3e5c58499e05bc83b468a2c4c2c96f588492c",
+      "gene_count": 25348,
+      "duplicate_symbol_rows": 1,
+      "duplicate_symbols": {
+        "TTTY17B": 2
+      },
+      "sample_count": 45,
+      "bytes": 1255656,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE127nnn/GSE127530/suppl/GSE127530_combinedCounts.txt.gz"
+    },
+    {
+      "name": "GSE127530_fixed_combinedCounts.txt.gz",
+      "compressed_sha256": "2f9ce53357f48601907528dee537c5aedaf8aaec3a70c64f48bc54b33b834bce",
+      "uncompressed_data_sha256": "73e016cc7dd2d7a5c553a24379a365e5aeb3a4c49d1b78932a70905a06ddc976",
+      "gene_count": 25342,
+      "duplicate_symbol_rows": 0,
+      "duplicate_symbols": {},
+      "sample_count": 45,
+      "bytes": 1254795,
+      "source_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE127nnn/GSE127530/suppl/GSE127530_fixed_combinedCounts.txt.gz"
+    }
+  ],
+  "interpretation_limit": "Column labels identify person, visit day, and timepoint. A food-component-specific causal effect cannot be inferred from this mixed high-fat challenge."
+}

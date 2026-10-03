@@ -1,0 +1,42 @@
+{
+  "accession": "GSE27385",
+  "analysis_version": "gse27385-rma-limma-paired-period-v2",
+  "run_utc": "2026-10-03 05:57:46 UTC",
+  "script_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/analyze_gse27385.R",
+  "script_sha256": "93a3f7ab0c0792169514715adea9994bd6673c71138c0746544f4b8166e237c0",
+  "helper_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/scripts/bridge_omics_helpers.R",
+  "helper_sha256": "635914a3ce1f6194d56fdfae76cac54b2c719c6ce937a4c6032003b432f7382d",
+  "independent_people": 11,
+  "sample_count": 33,
+  "contrasts": ["fishoil_vs_placebo_6weeks", "fenofibrate_vs_placebo_6weeks"],
+  "design_columns": ["FIBRATE", "FISHOIL", "PLACEBO", "subject_id04", "subject_id09", "subject_id12", "subject_id13", "subject_id15", "subject_id17", "subject_id20", "subject_id26", "subject_id36", "subject_id38", "periodB", "periodC"],
+  "person_block": "Person fixed effects; biological person is the independent unit",
+  "multiple_testing": "BH within contrast retained; primary q_value BH across all gene-by-primary-contrast tests in this study; pathway family separate",
+  "input_manifest": [
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/expansion/2026-10-01/raw/GSE27385/GSE27385_RAW.tar",
+      "sha256": "53c5166126c9d517e3efa88f93a23f18a4da0d278e4608ed844752ccb72c84f5",
+      "bytes": 160757760
+    },
+    {
+      "path": "/home/keunsoo/projects/nutrigenomics-db/expansion/2026-10-01/raw/GSE27385/GSE27385_family.soft.gz",
+      "sha256": "0059a6e810a7868117ffa55f82f2b2923e7d6189d91f4e3295106a8ccc19f3f1",
+      "bytes": 27142341
+    }
+  ],
+  "result_files": ["gene_effects.tsv.gz", "pathway_effects.tsv.gz"],
+  "auxiliary_files": ["sample_metadata.tsv", "sample_qc.tsv", "camera_sensitivity.tsv.gz", "reactome_membership.tsv", "reactome_snapshot.json"],
+  "normalization": "Independent raw CEL RMA; unambiguous GPL570 Entrez probes averaged per gene; person and period fixed effects",
+  "qc_limit": "Independent CEL RMA and PM intensity QC; ambiguous probe-to-gene mappings excluded. Independent RNA integrity and PBMC cell fractions not available.",
+  "interpretation_limit": "11 independent people with 33 end-period samples. Fish oil is a mixture; no separate EPA/DHA causal estimates. Fenofibrate is a drug comparator. Not validation of an acute 6h response.",
+  "pathway_analysis": "fgsea moderated-t rankings; CAMERA on one paired contrast per independent person at inter.gene.cor=0.01; varying period differences included as covariates with their model degrees of freedom",
+  "package_versions": {
+    "limma": "3.66.0",
+    "affy": "1.88.0",
+    "hgu133plus2cdf": "2.18.0",
+    "fgsea": "1.36.2",
+    "org.Hs.eg.db": "3.22.0",
+    "reactome.db": "1.95.0",
+    "jsonlite": "2.0.0"
+  }
+}
