@@ -1,43 +1,45 @@
-# NutriOmics 식이중재 분석
+**English** | [한국어](README.ko.md)
 
-사람 식이중재 연구의 유전자 발현과 소변 대사체 자료를 재분석하는 코드입니다. 참가자, 처치, 기간과 측정 시점을 정리하고, 같은 사람의 반복측정을 반영해 효과크기와 다중검정 보정값을 산출합니다.
+# NutriOmics Dietary Intervention Atlas
 
-[코호트별 결과와 입력 해시](docs/validated_snapshot.json) · [자료 목록](docs/prior_cohort_inventory.json) · [분석 코드 출처](docs/script_origins.json) · [통합 보고서](https://github.com/kangk1204/nutriomics-final-report)
+This repository reanalyzes gene expression and urinary metabolomics data from human dietary intervention studies. It maps participants, treatments, periods and sampling times, then estimates effects and multiple-testing corrections while accounting for repeated measurements from the same person.
 
-## 분석한 연구
+[Cohort results and input hashes](docs/validated_snapshot.json) | [Dataset inventory](docs/prior_cohort_inventory.json) | [Analysis script sources](docs/script_origins.json) | [Project report, restricted access](https://github.com/kangk1204/nutriomics-final-report)
 
-2026년 10월 1일 완료한 네 연구의 결과를 보관합니다. 사람 수와 측정 수는 각각 집계합니다.
+## Studies analyzed
 
-| 연구 | 연구 내용 | 참가자 | 측정 수 | 분석 방법 |
-|---|---|---:|---:|---|
-| GSE127530 | 식후 시간별 유전자 발현 | 5명 | 45개 | TMM·voom, 참가자 내 반복측정 반영 |
-| GSE56960 | 식사 열량·시간별 유전자 발현 | 14명 | 168개 | 원시 CEL의 RMA 정규화, 열량·시간별 대비 |
-| GSE27385 | 어유·위약·fenofibrate의 발현 변화 | 11명 | 33개 | 원시 CEL의 RMA 정규화, 참가자·기간 반영 |
-| ST001257 | DASH 식이의 닭고기·돼지고기 조건별 소변 변화 | 19명 | 소변 76개, 식품 조제물 14개 | 참가자별 섭취 전후 차이 |
+Analyses of these four studies were completed on October 1, 2026. Participant counts and measurement counts are reported separately.
 
-각 연구를 독립적으로 분석하며, 연구 간 공통 유전자·경로를 비교할 수 있도록 결과 형식을 맞췄습니다.
+| Study | Research focus | Participants | Measurements | Analysis |
+|---|---|---:|---|---|
+| GSE127530 | Postprandial gene expression over time | 5 | 45 | TMM and voom, accounting for repeated measurements within participants |
+| GSE56960 | Gene expression by meal energy and time | 14 | 168 | RMA normalization of raw CEL files; energy and time contrasts |
+| GSE27385 | Expression responses to fish oil, placebo and fenofibrate | 11 | 33 | RMA normalization of raw CEL files; participant and period effects |
+| ST001257 | Urinary responses to chicken and pork conditions within a DASH diet | 19 | 76 urine samples and 14 food preparations | Within-participant differences before and after intake |
 
-## 결과가 담고 있는 것
+Each study is analyzed independently. Consistent result formats support comparisons of shared genes and pathways across studies.
 
-유전자·대사체 결과에는 연구 ID, 측정 특징, 비교 조건, 효과크기, 표준오차 또는 신뢰구간, p값과 FDR 보정값을 저장합니다. 자료 단위와 입력 파일 해시를 함께 기록해 결과를 원자료까지 추적할 수 있습니다.
+## What the results contain
 
-ST001257은 질량·머무름 시간으로 정의한 **11,693개 분석 특징**을 두 조건에서 비교했습니다. 전체 23,386개 결과 행 중 최소 16쌍의 전후 측정을 확보한 **722개 검정**이 추정 가능했고, 전체 검정에 BH 보정을 적용했을 때 **q < 0.05인 결과는 0개**였습니다.
+Gene expression and metabolomics results include the study ID, measured feature, contrast, effect size, standard error or confidence interval, p-value and FDR-adjusted value. Units and input file hashes connect each result to its source data.
 
-이 자료의 특징명은 질량분석 신호를 가리킵니다. 화합물 동정과는 구분해 제공하며, 조건별 전후 차이를 연구 결과로 보고합니다. 교차설계의 순서·기간 정보가 없어 두 식품 조건 사이의 인과효과는 추정하지 않았습니다.
+For ST001257, **11,693 analytical features** defined by mass and retention time were compared under two conditions. Of 23,386 result rows, **722 tests** had at least 16 matched before-and-after pairs and could be estimated. After Benjamini-Hochberg correction across all tests, **0 results had q < 0.05**.
 
-## 분석 흐름
+Feature names identify mass-spectrometry signals, with compound identification treated separately. The reported estimates describe before-and-after changes within each condition. Sequence and period information were unavailable for the crossover design, so a causal contrast between the two food conditions was not estimated.
 
-1. 공식 제공처에서 자료와 시료 정보를 확보합니다.
-2. 참가자·처치·기간·시점의 대응표를 만듭니다.
-3. 플랫폼별 전처리와 품질관리를 수행합니다.
-4. 연구 설계에 맞는 통계모형으로 대비를 계산합니다.
-5. 결과표·시료표·검증 기록을 저장하고 입력·출력 해시를 연결합니다.
+## Analysis workflow
 
-GSE56960에서는 500 kcal 대비 1,000·1,500 kcal의 시간별 비교를, GSE27385에서는 어유·위약과 fenofibrate·위약의 비교를 산출합니다. ST001257은 제공된 log2 값을 사용하고 결측 처리와 최소 전후 쌍 수를 분석 조건에 명시했습니다.
+1. Retrieve data and sample metadata from the official repositories.
+2. Map participants, treatments, periods and sampling times.
+3. Apply platform-specific preprocessing and quality control.
+4. Estimate contrasts with statistical models that reflect the study design.
+5. Save result tables, sample tables and validation records with input and output hashes.
 
-## 설치와 실행
+For GSE56960, the analysis compares 1,000 and 1,500 kcal meals with 500 kcal meals at each time point. GSE27385 includes fish oil versus placebo and fenofibrate versus placebo contrasts. ST001257 uses the supplied log2 values; its analysis settings specify missing-value handling and the minimum number of matched pairs.
 
-Python 3.11 이상에서 설치합니다.
+## Installation and use
+
+Use Python 3.11 or later.
 
 ```sh
 python -m pip install -e ".[dev]"
@@ -45,7 +47,7 @@ nutriomics-atlas --help
 python -m pytest -q
 ```
 
-ST001257은 다음 순서로 수집·확인·분석합니다.
+Retrieve, check and analyze ST001257 as follows:
 
 ```sh
 nutriomics-atlas fetch-metabolomics --output-dir artifacts/raw/ST001257
@@ -54,14 +56,14 @@ nutriomics-atlas analyze-metabolomics --input-dir artifacts/raw/ST001257 --outpu
 nutriomics-atlas validate --input-dir artifacts/st001257-paired
 ```
 
-발현 분석은 R과 Bioconductor 패키지를 사용합니다. `nutriomics-atlas run-geo --help`에서 자료·출력 폴더와 R 실행 경로를 지정하는 방법을 확인할 수 있습니다. 사용한 스크립트와 원 연구 자료의 위치는 [분석 코드 출처](docs/script_origins.json)에 있습니다.
+Expression analyses use R and Bioconductor packages. Run `nutriomics-atlas run-geo --help` for data directories, output directories and R executable options. The [script source record](docs/script_origins.json) documents the analysis scripts and original project paths.
 
-## 자료 확인과 활용
+## Accessing and using the results
 
-[검증 결과](docs/validated_snapshot.json)에서 연구별 참가자·시료 수, 분석 조건, 결과 행 수와 파일 해시를 확인할 수 있습니다. 대용량 원자료와 전체 결과표는 연구 데이터 저장소에 보관합니다.
+The [validation results](docs/validated_snapshot.json) record participant and sample counts, analysis settings, result row counts and file hashes for each study. Large source files and complete result tables are held in research data storage.
 
-식품 성분량과 중재 결과를 함께 조회하는 웹은 [NutriOmics DB](https://github.com/kangk1204/nutriomics-db)에서 제공합니다. 참가자 연결이 확인된 자료만 개인 내 분석에 사용하며, 서로 다른 코호트의 오믹스 결과는 연구별 근거로 연결합니다.
+The [NutriOmics DB web platform](https://github.com/kangk1204/nutriomics-db) provides food composition and intervention-result queries. Within-person analyses use verified participant links. Omics results from different cohorts are connected as study-specific evidence.
 
-원자료는 NCBI GEO와 Metabolomics Workbench의 해당 연구에서 확보합니다. 코드와 재사용 내역은 이 저장소의 파일 및 [출처 목록](docs/script_origins.json)에, 원자료의 이용조건은 각 제공기관에 따릅니다.
+Source datasets are available from the corresponding NCBI GEO and Metabolomics Workbench study records. The repository files and [source inventory](docs/script_origins.json) document code reuse. Each source dataset retains its provider's terms.
 
-코드는 [MIT 라이선스](LICENSE)로 제공합니다. 외부 자료와 모델의 출처 및 이용조건은 [데이터와 소프트웨어 이용 안내](DATA_LICENSES.md)에 정리했습니다.
+The code is available under the [MIT License](LICENSE). [Software and data licenses](DATA_LICENSES.md) lists the sources and terms for external data and software.
