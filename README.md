@@ -63,3 +63,5 @@ nutriomics-atlas validate --input-dir artifacts/st001257-paired
 식품 성분량과 중재 결과를 함께 조회하는 웹은 [NutriOmics DB](https://github.com/kangk1204/nutriomics-db)에서 제공합니다. 참가자 연결이 확인된 자료만 개인 내 분석에 사용하며, 서로 다른 코호트의 오믹스 결과는 연구별 근거로 연결합니다.
 
 원자료는 NCBI GEO와 Metabolomics Workbench의 해당 연구에서 확보합니다. 코드와 재사용 내역은 이 저장소의 파일 및 [출처 목록](docs/script_origins.json)에, 원자료의 이용조건은 각 제공기관에 따릅니다.
+
+코드는 [MIT 라이선스](LICENSE)로 제공합니다. 외부 자료와 모델의 출처 및 이용조건은 [데이터와 소프트웨어 이용 안내](DATA_LICENSES.md)에 정리했습니다.
